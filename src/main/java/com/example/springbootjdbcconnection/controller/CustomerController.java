@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class CustomerController {
-    private CustomerService customerService;
+    private final CustomerService customerService;
 
-    @Autowired
-    private CustomerHandlerConsumer customerHandlerConsumer;
+//    @Autowired
+//    private CustomerHandlerConsumer customerHandlerConsumer;
 
     public CustomerController(CustomerService customerService) {
         this.customerService = customerService;
